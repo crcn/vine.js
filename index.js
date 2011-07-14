@@ -1,3 +1,4 @@
+//meh, shit's ugly.
 
 function combineArrays(c1,c2,target,property)
 {
@@ -46,10 +47,6 @@ var Vine =
 
 		var invoker = 
 		{
-			/*session:function(request)
-			{
-				//fetch the access token
-			},*/
 			error:function()
 			{
 				if(arguments.length == 0) return data.errors;
@@ -118,27 +115,6 @@ var Vine =
 					
 				return this;
 			}
-			,call:function(type,params,callback)
-			{
-				if(!callback && (typeof params == 'function')) 
-				{
-					callback = params;
-					params = null;
-				}
-
-				if(!data.calls)
-				data.calls = {};
-                                  
-				var d = {};
-				
-				data.calls[type] = d;
-
-				if(params)
-					d.params = params;
-
-
-				return this;
-			}
 			,send:function(r,displayType)
 			{
 				if(!r || (typeof r == 'string')) 
@@ -161,3 +137,16 @@ var Vine =
 
 exports.api = Vine.api;
 
+
+['error','warning','combine','redirect','message','result','results','ttl'].forEach(function(method)
+{
+	exports[method] = function()
+	{
+		var api = exports.api();
+		
+		return api[method].apply(api, arguments);
+	}
+});
+
+
+console.log(exports.message('hello %s %s','craig','condon').error('this is an error').ttl(5).result({data:'and this is some data'}).data);
