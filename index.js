@@ -124,6 +124,10 @@ var Vine =
 					
 				
 				request.display(displayType || 'json',data);
+			},
+			toJSON: function()
+			{
+				return invoker.data;
 			}
 		}
 		
