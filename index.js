@@ -149,4 +149,3 @@ exports.api = Vine.api;
 });
 
 
-console.log(exports.message('hello %s %s','craig','condon').error('this is an error').ttl(5).result({data:'and this is some data'}).data);
