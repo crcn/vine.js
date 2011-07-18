@@ -77,7 +77,7 @@ var Vine =
 				combineArrays(thisData,thatData,newData,'warnings');
 				combineArrays(thisData,thatData,newData,'result');
 				
-				return Coco.api(null,null,newData);
+				return Vine.api(null,null,newData);
 			}
 			,redirect:function(to)
 			{
