@@ -115,15 +115,21 @@ var Vine =
 					
 				return this;
 			}
-			,send:function(r,displayType)
+
+			//deprecated
+			,send:function(r)
 			{
 				if(!r || (typeof r == 'string')) 
 					displayType = r;
 				else
 					request = r;
 					
-				
 				request.display(displayType || 'json',data);
+			},
+			end: function(target)
+			{
+				if(target) target.end(data);
+				return data;
 			},
 			toJSON: function()
 			{
