@@ -117,14 +117,9 @@ var Vine =
 			}
 
 			//deprecated
-			,send:function(r)
-			{
-				if(!r || (typeof r == 'string')) 
-					displayType = r;
-				else
-					request = r;
-					
-				request.display(displayType || 'json',data);
+			,send:function(request)
+			{		
+				request.display('json',data);
 			},
 			end: function(target)
 			{
