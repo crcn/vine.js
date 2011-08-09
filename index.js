@@ -68,7 +68,7 @@ var Vine =
 			,combine:function(api)
 			{
 				var thisData = data,
-					thatData = api.data,
+					thatData = api.data || api,
 					newData = {};
 					
 				for(var i in thisData) newData[i] = thisData;
@@ -123,7 +123,10 @@ var Vine =
 			},
 			end: function(target)
 			{
+
 				if(target) target.end(data);
+				
+
 				return data;
 			},
 			toJSON: function()
