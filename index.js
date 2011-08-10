@@ -32,13 +32,21 @@ function _buildMessage()
 
 var Vine = 
 {
-	setApi:function(request)
+
+	/**
+	 */
+	 
+	setApi: function(request)
 	{
 		request.api = Vine.api(request);
 		
 		return request;
 	},
-	api:function(request,methods,data)
+
+	/**
+	 */
+
+	api: function(request,methods,data)
 	{
 		if(!data) data = {};
 		
@@ -47,7 +55,11 @@ var Vine =
 
 		var invoker = 
 		{
-			error:function()
+
+			/**
+			 */
+
+			error: function()
 			{
 				if(arguments.length == 0) return data.errors;
 				
@@ -55,8 +67,21 @@ var Vine =
 				
 				data.errors.push({ message: _buildMessage.apply(null, arguments)});
 				return this;
-			}
-			,warning:function()
+			},
+
+			/**
+			 * the type of data. Used for 
+			 */
+
+			type: function(type)
+			{
+				data.type = type;
+			},
+
+			/**
+			 */
+			 
+			warning: function()
 			{
 				if(arguments.length == 0) return data.warnings;
 				
@@ -64,8 +89,12 @@ var Vine =
 				
 				data.warnings.push({ message: _buildMessage.apply(null, arguments)});
 				return this;
-			}
-			,combine:function(api)
+			},
+			
+			/**
+			 */
+			 
+			combine: function(api)
 			{
 				var thisData = data,
 					thatData = api.data || api,
@@ -78,49 +107,77 @@ var Vine =
 				combineArrays(thisData,thatData,newData,'result');
 				
 				return Vine.api(null,null,newData);
-			}
-			,redirect:function(to)
+			},
+
+			/**
+			 */
+			 
+
+			redirect: function(to)
 			{
 				if(to == undefined) return data.redirect;
 				
 				data.redirect = to;
 				return this;
-			}
-			,message:function(msg)
+			},
+
+			/**
+			 */
+			 
+			message: function(msg)
 			{
 				if(!msg) return data.message;
 				
 				data.message = _buildMessage.apply(null, arguments);
 				return this;
-			}
-			,result:function(result)
+			},
+
+			/**
+			 */
+			 
+			result: function(result)
 			{
 				if(result == undefined) return data.result;
 				
 				data.result = result;
 				return this;
-			}
-			,results:function(result)
+			},
+
+			/**
+			 */
+			 
+			results: function(result)
 			{
 				if(result == undefined) return data.result;
 				
 				if(!(data.result instanceof Array)) data.result = [];
 				data.result.push(result);
 				return this;
-			}
-			,ttl:function(ttl)
+			},
+			
+			/**
+			 */
+			 
+			ttl:function(ttl)
 			{
 				if(ttl > -1)
 					data.ttl = ttl;
 					
 				return this;
-			}
+			},
 
-			//deprecated
-			,send:function(request)
+			/**
+			 * deprecated
+			 */
+			 
+			send: function(request)
 			{		
 				request.display('json',data);
 			},
+
+			/**
+			 */
+			 
 			end: function(target)
 			{
 
@@ -129,6 +186,10 @@ var Vine =
 
 				return data;
 			},
+
+			/**
+			 */
+			 
 			toJSON: function()
 			{
 				return invoker.data;
