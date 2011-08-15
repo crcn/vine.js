@@ -75,7 +75,11 @@ var Vine =
 
 			type: function(type)
 			{
+				if(type == undefined) return data.type;
+
 				data.type = type;
+
+				return this;
 			},
 
 			/**
@@ -130,6 +134,52 @@ var Vine =
 				
 				data.message = _buildMessage.apply(null, arguments);
 				return this;
+			},
+
+			/**
+			 */
+
+			method: function(method)
+			{
+				if(method == undefined) return data.method;
+				data.method = method;
+				return this;
+			},
+
+			/**
+			 */
+
+			list: function(data)
+			{
+				this.result(data);
+				return this.method('list');
+			},
+
+			/**
+			 */
+
+			add: function(data)
+			{
+				this.result(data);
+				return this.method('add');
+			},
+
+			/**
+			 */
+
+			remove: function(data)
+			{
+				this.result(data);
+				return this.method('remove');
+			},
+
+			/**
+			 */
+
+			update: function(data)
+			{
+				this.result(data);
+				return this.method('update');
 			},
 
 			/**
@@ -207,7 +257,7 @@ var Vine =
 exports.api = Vine.api;
 
 
-['error','warning','combine','redirect','message','result','results','ttl'].forEach(function(method)
+['error','warning','combine','redirect','message','result','results','ttl','type','method','list','add','remove','update'].forEach(function(method)
 {
 	exports[method] = function()
 	{
