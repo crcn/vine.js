@@ -61,7 +61,7 @@ var Vine =
 
 			error: function()
 			{
-				if(arguments.length == 0) return data.errors;
+				if(!arguments.length) return data.errors;
 				
 				if(!data.errors) data.errors = [];
 				
@@ -75,7 +75,7 @@ var Vine =
 
 			type: function(type)
 			{
-				if(type == undefined) return data.type;
+				if(!arguments.length) return data.type;
 
 				data.type = type;
 
@@ -87,7 +87,7 @@ var Vine =
 			 
 			warning: function()
 			{
-				if(arguments.length == 0) return data.warnings;
+				if(!arguments.length) return data.warnings;
 				
 				if(!data.warnings) data.warnings = [];
 				
@@ -119,7 +119,7 @@ var Vine =
 
 			redirect: function(to)
 			{
-				if(to == undefined) return data.redirect;
+				if(!arguments.length) return data.redirect;
 				
 				data.redirect = to;
 				return this;
@@ -130,7 +130,7 @@ var Vine =
 			 
 			message: function(msg)
 			{
-				if(!msg) return data.message;
+				if(!arguments.length) return data.message;
 				
 				data.message = _buildMessage.apply(null, arguments);
 				return this;
@@ -141,7 +141,7 @@ var Vine =
 
 			method: function(method)
 			{
-				if(method == undefined) return data.method;
+				if(!arguments.length) return data.method;
 				data.method = method;
 				return this;
 			},
@@ -187,7 +187,7 @@ var Vine =
 			 
 			result: function(result)
 			{
-				if(result == undefined) return data.result;
+				if(!arguments.length) return data.result;
 				
 				data.result = result;
 				return this;
@@ -198,7 +198,7 @@ var Vine =
 			 
 			results: function(result)
 			{
-				if(result == undefined) return data.result;
+				if(!arguments.length) return data.result;
 				
 				if(!(data.result instanceof Array)) data.result = [];
 				data.result.push(result);
@@ -216,14 +216,6 @@ var Vine =
 				return this;
 			},
 
-			/**
-			 * deprecated
-			 */
-			 
-			send: function(request)
-			{		
-				request.display('json',data);
-			},
 
 			/**
 			 */
