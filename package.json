@@ -1,7 +1,7 @@
 {
     "name": "vine",
     "description": "API builder",
-    "version": "0.0.7",
+    "version": "0.0.9",
     "author": "Craig Condon",
     "repository": {
         "type": "git",
