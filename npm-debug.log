@@ -1,8 +1,8 @@
 info it worked if it ends with ok
 verbose cli [ 'node', '/usr/local/bin/npm', 'publish', '--force' ]
-info using npm@1.0.103
+info using npm@1.0.97
 info using node@v0.4.12
-verbose config file /Users/craig/.npmrc
+verbose config file /Users/craigcondon/.npmrc
 verbose config file /usr/local/etc/npmrc
 verbose config file /usr/local/lib/node_modules/npm/npmrc
 verbose publish [ '.' ]
@@ -14,17 +14,19 @@ silly testEngine   repository:
 silly testEngine    { type: 'git',
 silly testEngine      url: 'git://github.com/spiceapps/vine.git' },
 silly testEngine   main: './index.js',
-silly testEngine   _npmUser: { name: 'architectd', email: 'craig@spiceapps.com' },
+silly testEngine   _npmUser: 
+silly testEngine    { name: 'architectd',
+silly testEngine      email: 'craig.j.condon@gmail.com' },
 silly testEngine   _id: 'vine@0.0.9',
 silly testEngine   dependencies: {},
 silly testEngine   devDependencies: {},
 silly testEngine   engines: { node: '*' },
 silly testEngine   _engineSupported: true,
-silly testEngine   _npmVersion: '1.0.103',
+silly testEngine   _npmVersion: '1.0.97',
 silly testEngine   _nodeVersion: 'v0.4.12',
 silly testEngine   _defaultsLoaded: true,
 silly testEngine   scripts: {} }
-verbose caching /Users/craig/Dropbox/Developer/Public/vine/package.json
+verbose caching /Users/craigcondon/Dropbox/Developer/Public/vine/package.json
 verbose loadDefaults vine@0.0.9
 info prepublish vine@0.0.9
 verbose cache add [ '.', null ]
@@ -38,56 +40,58 @@ silly testEngine   repository:
 silly testEngine    { type: 'git',
 silly testEngine      url: 'git://github.com/spiceapps/vine.git' },
 silly testEngine   main: './index.js',
-silly testEngine   _npmUser: { name: 'architectd', email: 'craig@spiceapps.com' },
+silly testEngine   _npmUser: 
+silly testEngine    { name: 'architectd',
+silly testEngine      email: 'craig.j.condon@gmail.com' },
 silly testEngine   _id: 'vine@0.0.9',
 silly testEngine   dependencies: {},
 silly testEngine   devDependencies: {},
 silly testEngine   engines: { node: '*' },
 silly testEngine   _engineSupported: true,
-silly testEngine   _npmVersion: '1.0.103',
+silly testEngine   _npmVersion: '1.0.97',
 silly testEngine   _nodeVersion: 'v0.4.12',
 silly testEngine   _defaultsLoaded: true,
-silly testEngine   path: '/Users/craig/Dropbox/Developer/Public/vine' }
+silly testEngine   path: '/Users/craigcondon/Dropbox/Developer/Public/vine' }
 verbose caching package.json
 verbose loadDefaults vine@0.0.9
-verbose pack /Users/craig/Dropbox/Developer/Public/vine /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865/tmp.tgz
-verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598'
-verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865'
-verbose mkdir done: /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865 755
-verbose mkdir'ed /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865
+verbose pack /Users/craigcondon/Dropbox/Developer/Public/vine /var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386/tmp.tgz
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962'
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386'
+verbose mkdir done: /var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386 755
+verbose mkdir'ed /var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386
 verbose tar about to write tar and gzip it.
 silly tar args [ '-czvf', '-', '-T', '-' ]
 silly spawning [ 'tar',
 silly spawning   [ '-czvf', '-', '-T', '-' ],
-silly spawning   '/Users/craig/Dropbox/Developer/Public' ]
-verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865/contents'
-verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865/contents/___package.npm'
-verbose mkdir done: /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865/contents/___package.npm 755
+silly spawning   '/Users/craigcondon/Dropbox/Developer/Public' ]
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386/contents'
+verbose mkdir (expected) error ENOENT, No such file or directory '/var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386/contents/___package.npm'
+verbose mkdir done: /var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386/contents/___package.npm 755
 verbose unpack_ uid, gid [ undefined, undefined ]
-verbose unpackTarget /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865/contents/package
+verbose unpackTarget /var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386/contents/package
 silly gunzTarPerm modes [ '755', '644' ]
 silly spawning [ 'tar',
 silly spawning   [ '-zmvxpf',
-silly spawning     '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865/tmp.tgz',
+silly spawning     '/var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386/tmp.tgz',
 silly spawning     '-o' ],
-silly spawning   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865/contents/___package.npm' ]
+silly spawning   '/var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386/contents/___package.npm' ]
 silly tar err x vine/.cupboard
 silly tar err x vine/.gitignore
 silly tar err x vine/index.js
 silly tar err x vine/MIT-LICENSE.txt
 silly tar err x vine/package.json
 silly tar err x vine/README.md
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865/contents/___package.npm/vine
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865/contents/___package.npm/vine/.cupboard
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865/contents/___package.npm/vine/.gitignore
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865/contents/___package.npm/vine/index.js
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865/contents/___package.npm/vine/MIT-LICENSE.txt
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865/contents/___package.npm/vine/package.json
-silly asyncMap in gTP /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865/contents/___package.npm/vine/README.md
-verbose gunzed /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865/contents/___package.npm/vine
-verbose rm'ed /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865/contents/package
-verbose renamed [ '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865/contents/___package.npm/vine',
-verbose renamed   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865/contents/package' ]
+silly asyncMap in gTP /var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386/contents/___package.npm/vine
+silly asyncMap in gTP /var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386/contents/___package.npm/vine/.cupboard
+silly asyncMap in gTP /var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386/contents/___package.npm/vine/.gitignore
+silly asyncMap in gTP /var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386/contents/___package.npm/vine/index.js
+silly asyncMap in gTP /var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386/contents/___package.npm/vine/MIT-LICENSE.txt
+silly asyncMap in gTP /var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386/contents/___package.npm/vine/package.json
+silly asyncMap in gTP /var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386/contents/___package.npm/vine/README.md
+verbose gunzed /var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386/contents/___package.npm/vine
+verbose rm'ed /var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386/contents/package
+verbose renamed [ '/var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386/contents/___package.npm/vine',
+verbose renamed   '/var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386/contents/package' ]
 silly testEngine { name: 'vine',
 silly testEngine   description: 'API builder',
 silly testEngine   version: '0.0.9',
@@ -96,137 +100,42 @@ silly testEngine   repository:
 silly testEngine    { type: 'git',
 silly testEngine      url: 'git://github.com/spiceapps/vine.git' },
 silly testEngine   main: './index.js',
-silly testEngine   _npmUser: { name: 'architectd', email: 'craig@spiceapps.com' },
+silly testEngine   _npmUser: 
+silly testEngine    { name: 'architectd',
+silly testEngine      email: 'craig.j.condon@gmail.com' },
 silly testEngine   _id: 'vine@0.0.9',
 silly testEngine   dependencies: {},
 silly testEngine   devDependencies: {},
 silly testEngine   engines: { node: '*' },
 silly testEngine   _engineSupported: true,
-silly testEngine   _npmVersion: '1.0.103',
+silly testEngine   _npmVersion: '1.0.97',
 silly testEngine   _nodeVersion: 'v0.4.12',
 silly testEngine   _defaultsLoaded: true,
-silly testEngine   path: '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865/contents/package' }
-verbose caching /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865/contents/package/package.json
+silly testEngine   path: '/var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386/contents/package' }
+verbose caching /var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386/contents/package/package.json
 verbose loadDefaults vine@0.0.9
 verbose tarball contents [ 'package' ]
-verbose from cache /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865/contents/package/package.json
-verbose pack /var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865/contents/package /Users/craig/.npm/vine/0.0.9/package.tgz
-verbose mkdir'ed /Users/craig/.npm/vine/0.0.9
+verbose from cache /var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386/contents/package/package.json
+verbose pack /var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386/contents/package /Users/craigcondon/.npm/vine/0.0.9/package.tgz
+verbose mkdir'ed /Users/craigcondon/.npm/vine/0.0.9
 verbose tar about to write tar and gzip it.
 silly tar args [ '-czvf', '-', '-T', '-' ]
 silly spawning [ 'tar',
 silly spawning   [ '-czvf', '-', '-T', '-' ],
-silly spawning   '/var/folders/n1/r96x64mx6jzcbzkbz1ddrw6r0000gn/T/npm-1320526983598/1320526983598-0.3958090983796865/contents' ]
-verbose mkdir (expected) error ENOENT, No such file or directory '/Users/craig/.npm/vine/0.0.9/___package.npm'
-verbose mkdir done: /Users/craig/.npm/vine/0.0.9/___package.npm 755
-verbose unpack_ uid, gid [ undefined, undefined ]
-verbose unpackTarget /Users/craig/.npm/vine/0.0.9/package
-silly gunzTarPerm modes [ '755', '644' ]
-silly spawning [ 'tar',
-silly spawning   [ '-zmvxpf',
-silly spawning     '/Users/craig/.npm/vine/0.0.9/package.tgz',
-silly spawning     '-o' ],
-silly spawning   '/Users/craig/.npm/vine/0.0.9/___package.npm' ]
-silly tar err x package/.cupboard
-silly tar err x package/.gitignore
-silly tar err x package/index.js
-silly tar err x package/package.json
-silly tar err x package/README.md
-silly tar err x package/MIT-LICENSE.txt
-silly asyncMap in gTP /Users/craig/.npm/vine/0.0.9/___package.npm/package
-silly asyncMap in gTP /Users/craig/.npm/vine/0.0.9/___package.npm/package/.cupboard
-silly asyncMap in gTP /Users/craig/.npm/vine/0.0.9/___package.npm/package/.gitignore
-silly asyncMap in gTP /Users/craig/.npm/vine/0.0.9/___package.npm/package/index.js
-silly asyncMap in gTP /Users/craig/.npm/vine/0.0.9/___package.npm/package/MIT-LICENSE.txt
-silly asyncMap in gTP /Users/craig/.npm/vine/0.0.9/___package.npm/package/package.json
-silly asyncMap in gTP /Users/craig/.npm/vine/0.0.9/___package.npm/package/README.md
-verbose gunzed /Users/craig/.npm/vine/0.0.9/___package.npm/package
-verbose rm'ed /Users/craig/.npm/vine/0.0.9/package
-verbose renamed [ '/Users/craig/.npm/vine/0.0.9/___package.npm/package',
-verbose renamed   '/Users/craig/.npm/vine/0.0.9/package' ]
-silly testEngine { name: 'vine',
-silly testEngine   description: 'API builder',
-silly testEngine   version: '0.0.9',
-silly testEngine   author: { name: 'Craig Condon' },
-silly testEngine   repository: 
-silly testEngine    { type: 'git',
-silly testEngine      url: 'git://github.com/spiceapps/vine.git' },
-silly testEngine   main: './index.js',
-silly testEngine   _npmUser: { name: 'architectd', email: 'craig@spiceapps.com' },
-silly testEngine   _id: 'vine@0.0.9',
-silly testEngine   dependencies: {},
-silly testEngine   devDependencies: {},
-silly testEngine   engines: { node: '*' },
-silly testEngine   _engineSupported: true,
-silly testEngine   _npmVersion: '1.0.103',
-silly testEngine   _nodeVersion: 'v0.4.12',
-silly testEngine   _defaultsLoaded: true,
-silly testEngine   dist: 
-silly testEngine    { shasum: '9d7061accbf3a56e47adbadd8e3f804399d0da0d',
-silly testEngine      tarball: 'http://registry.npmjs.org/vine/-/vine-0.0.9.tgz' } }
-verbose caching /Users/craig/.npm/vine/0.0.9/package/package.json
-verbose loadDefaults vine@0.0.9
-silly updated sha bytes 10240
-info shasum 9d7061accbf3a56e47adbadd8e3f804399d0da0d
-info shasum /Users/craig/.npm/vine/0.0.9/package.tgz
-verbose from cache /Users/craig/.npm/vine/0.0.9/package/package.json
-verbose chmod /Users/craig/.npm/vine/0.0.9/package.tgz 644
-verbose chown [ '/Users/craig/.npm/vine/0.0.9/package.tgz', 501, 20 ]
-silly publish { name: 'vine',
-silly publish   description: 'API builder',
-silly publish   version: '0.0.9',
-silly publish   author: { name: 'Craig Condon' },
-silly publish   repository: 
-silly publish    { type: 'git',
-silly publish      url: 'git://github.com/spiceapps/vine.git' },
-silly publish   main: './index.js',
-silly publish   _npmUser: { name: 'architectd', email: 'craig@spiceapps.com' },
-silly publish   _id: 'vine@0.0.9',
-silly publish   dependencies: {},
-silly publish   devDependencies: {},
-silly publish   engines: { node: '*' },
-silly publish   _engineSupported: true,
-silly publish   _npmVersion: '1.0.103',
-silly publish   _nodeVersion: 'v0.4.12',
-silly publish   _defaultsLoaded: true,
-silly publish   dist: 
-silly publish    { shasum: '9d7061accbf3a56e47adbadd8e3f804399d0da0d',
-silly publish      tarball: 'http://registry.npmjs.org/vine/-/vine-0.0.9.tgz' } }
-verbose PUT vine
-verbose raw, before any munging vine
-verbose url resolving [ 'https://registry.npmjs.org/', './vine' ]
-verbose url resolved https://registry.npmjs.org/vine
-verbose GET vine
-verbose raw, before any munging vine
-verbose url resolving [ 'https://registry.npmjs.org/', './vine' ]
-verbose url resolved https://registry.npmjs.org/vine
-verbose PUT vine/0.0.9/-tag/latest
-verbose raw, before any munging vine/0.0.9/-tag/latest
-verbose url resolving [ 'https://registry.npmjs.org/',
-verbose url resolving   './vine/0.0.9/-tag/latest' ]
-verbose url resolved https://registry.npmjs.org/vine/0.0.9/-tag/latest
-ERR! Error sending version data
-ERR! Error: forbidden _npmUser must be a current maintainer.
-ERR! maintainers=[{"name":"architectd","email":"craig.j.condon@gmail.com"}]
-ERR! current user={"name":"architectd","email":"craig.j.condon@gmail.com"}: vine/0.0.9/-tag/latest
-ERR!     at Request.callback (/usr/local/lib/node_modules/npm/lib/utils/npm-registry-client/request.js:181:12)
-ERR!     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:346:18)
-ERR!     at Request.emit (events.js:64:17)
-ERR!     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/main.js:314:16)
-ERR!     at IncomingMessage.emit (events.js:81:20)
-ERR!     at HTTPParser.onMessageComplete (http.js:133:23)
-ERR!     at CleartextStream.ondata (http.js:1231:22)
-ERR!     at CleartextStream._push (tls.js:303:27)
-ERR!     at SecurePair.cycle (tls.js:577:20)
-ERR!     at EncryptedStream.write (tls.js:96:13)
+silly spawning   '/var/folders/VZ/VZ7Arqy7GlOx8ABOk-8phk+++TI/-Tmp-/npm-1320696127962/1320696127962-0.8914473734330386/contents' ]
+ERR! Could not remove /Users/craigcondon/.npm/vine/0.0.9/package
+ERR! Could not install: .
+ERR! Error: EACCES, Permission denied '/Users/craigcondon/.npm/vine/0.0.9/package/index.js'
 ERR! Report this *entire* log at:
 ERR!     <http://github.com/isaacs/npm/issues>
 ERR! or email it to:
 ERR!     <npm-@googlegroups.com>
 ERR! 
-ERR! System Darwin 11.2.0
+ERR! System Darwin 10.7.0
 ERR! command "node" "/usr/local/bin/npm" "publish" "--force"
-ERR! cwd /Users/craig/Dropbox/Developer/Public/vine
+ERR! cwd /Users/craigcondon/Dropbox/Developer/Public/vine
 ERR! node -v v0.4.12
-ERR! npm -v 1.0.103
+ERR! npm -v 1.0.97
+ERR! path /Users/craigcondon/.npm/vine/0.0.9/package/index.js
+ERR! code EACCES
 verbose exit [ 1, true ]
