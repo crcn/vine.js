@@ -236,7 +236,7 @@ var Vine =
 			 
 			end: function(target)
 			{
-				
+				if(target)
 				if(target.end)
 				{
 					target.end(data);
