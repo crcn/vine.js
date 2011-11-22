@@ -1,5 +1,4 @@
 //meh, shit's ugly.
-
 function combineArrays(c1,c2,target,property)
 {
 	var c1p = c1[property];
