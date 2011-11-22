@@ -237,10 +237,17 @@ var Vine =
 			 
 			end: function(target)
 			{
-
-				if(target) target.end(data);
 				
-
+				if(target.end)
+				{
+					target.end(data);
+				}
+				else
+				if(typeof target == 'function')
+				{
+					target(data);
+				}
+				
 				return data;
 			},
 
