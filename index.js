@@ -1,3 +1,6 @@
+var outcome = require('outcome'),
+EventEmitter = require('events').EventEmitter;
+
 //meh, shit's ugly.
 function combineArrays(c1,c2,target,property)
 {
@@ -248,6 +251,36 @@ var Vine =
 				}
 				
 				return data;
+			},
+
+			/**
+			 */
+
+			fn: function(fn)
+			{
+				if(data.errors) 
+				{
+					target(data.errors.length > 1 ? data.errors : data.errors[0]);
+				}
+				else
+				{
+					fn(null, data.result);
+				}	
+			},
+
+			/**
+			 */
+
+			outcome: function() 
+			{
+				return outcome.chain(new EventEmitter(), function(response) {
+					
+					if(response.errors) {
+						em.emit('error', response.errors);
+					} else {
+						em.emit('result', response.result || true);
+					}
+				});
 			},
 
 			/**
