@@ -303,7 +303,7 @@ var Vine =
 exports.api = Vine.api;
 
 
-['error','warning','combine','redirect','message','result','results','ttl','type','method','list','add','remove','update','success'].forEach(function(method)
+['error','outcome','warning','combine','redirect','message','result','results','ttl','type','method','list','add','remove','update','success'].forEach(function(method)
 {
 	exports[method] = function()
 	{
