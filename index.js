@@ -273,7 +273,9 @@ var Vine =
 
 			outcome: function() 
 			{
-				return outcome.chain(new EventEmitter(), function(response) {
+				var em = new EventEmitter();
+
+				return outcome.chain(em, function(response) {
 					
 					if(response.errors) {
 						em.emit('error', response.errors);
