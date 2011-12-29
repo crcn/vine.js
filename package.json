@@ -1,14 +1,14 @@
 {
     "name": "vine",
     "description": "API builder",
-    "version": "0.0.12",
+    "version": "0.0.13",
     "author": "Craig Condon",
     "repository": {
         "type": "git",
         "url": "http://github.com/crcn/vine.git"
     },
     "dependencies": {
-    	"outcome":"*"
+        "outcome": "*"
     },
     "main": "./index.js"
 }

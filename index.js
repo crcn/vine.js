@@ -22,6 +22,9 @@ function combineArrays(c1,c2,target,property)
 function _buildMessage()
 {
 	var msg = arguments[0];
+
+	//error object
+	if(msg.message) msg = msg.message;
 	
 	for(var i = 1, n = arguments.length; i < n; i++)
 	{
