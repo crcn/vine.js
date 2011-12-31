@@ -12,7 +12,6 @@ function combineArrays(c1,c2,target,property)
 	c1p = c1p || [];
 	c2p = c2p || [];
 	
-	
 	c1p = c1p instanceof Array ? c1p : [c1p];
 	c2p = c2p instanceof Array ? c2p : [c2p];
 	
@@ -276,14 +275,12 @@ var Vine =
 
 			outcome: function() 
 			{
-				var em = new EventEmitter();
-
-				return outcome.chain(em, function(response) {
+				return outcome.handle(function(response) {
 					
 					if(response.errors) {
-						em.emit('error', response.errors);
+						this.error(response.errors);
 					} else {
-						em.emit('result', response.result || true);
+						this.success(response.result || true);
 					}
 				});
 			},
