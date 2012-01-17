@@ -274,8 +274,12 @@ var Vine =
 			/**
 			 */
 
-			onOutcome: function(messages) 
+			onOutcome: function(resp, messages) 
 			{
+				if(messages) {
+					messages.resp = resp;
+				}
+
 				if(!messages) messages = {};
 
 
