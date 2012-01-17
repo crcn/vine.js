@@ -67,12 +67,20 @@ var Vine =
 			error: function()
 			{
 				if(!arguments.length) return data.errors;
+
+				if(arguments[0] instanceof Array) {
+					arguments[0].forEach(function(err) {
+						invoker.error(err);
+					})
+					return this;
+				}
 				
 				if(!data.errors) data.errors = [];
 				
 				data.errors.push({ message: _buildMessage.apply(null, arguments)});
 				return this;
 			},
+
 
 			/**
 			 * the type of data. Used for 
