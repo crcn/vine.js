@@ -1,6 +1,7 @@
 var outcome = require('outcome'),
 EventEmitter = require('events').EventEmitter;
 
+
 //meh, shit's ugly.
 function combineArrays(c1,c2,target,property)
 {
@@ -273,15 +274,23 @@ var Vine =
 			/**
 			 */
 
-			outcome: function() 
+			onOutcome: function(messages) 
 			{
-				return outcome.handle(function(response) {
-					
-					if(response.errors) {
-						this.error(response.errors);
-					} else {
-						this.success(response.result || true);
-					}
+				if(!messages) messages = {};
+
+
+				return outcome.error(function(err) 
+				{
+					invoker.error(messages.error || (err ? err.message : err));
+						
+				}).success(function(result) 
+				{
+					invoker.result(messages.success || result);
+
+				}).done(function() 
+				{
+					if(messages.resp) invoker.end(messages.resp);
+
 				});
 			},
 
@@ -304,15 +313,15 @@ var Vine =
 
 exports.api = Vine.api;
 
+var v = Vine.api();
 
-['error','outcome','warning','combine','redirect','message','result','results','ttl','type','method','list','add','remove','update','success'].forEach(function(method)
-{
-	exports[method] = function()
-	{
+Object.keys(v).forEach(function(method) {
+	exports[method] = function() {
 		var api = exports.api();
-		
+
 		return api[method].apply(api, arguments);
 	}
-});
+})
+
 
 

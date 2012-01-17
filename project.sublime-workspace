@@ -19,7 +19,15 @@
 			"file": "vine/index.js",
 			"settings":
 			{
-				"buffer_size": 4791,
+				"buffer_size": 4743,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin XqA080.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -59,7 +67,7 @@
 			"file": "index.js",
 			"settings":
 			{
-				"buffer_size": 4740,
+				"buffer_size": 4743,
 				"line_ending": "Unix"
 			}
 		},
@@ -67,7 +75,7 @@
 			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 284,
+				"buffer_size": 288,
 				"line_ending": "Unix"
 			}
 		}
@@ -286,15 +294,15 @@
 					"file": "vine/index.js",
 					"settings":
 					{
-						"buffer_size": 4791,
+						"buffer_size": 4743,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								263,
-								263
+								4290,
+								4290
 							]
 						],
 						"settings":
@@ -303,14 +311,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3855.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "/tmp/subl stdin iqwtqq.txt",
+					"file": "/tmp/subl stdin XqA080.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -336,7 +344,7 @@
 				},
 				{
 					"buffer": 3,
-					"file": "/tmp/subl stdin XdgMEX.txt",
+					"file": "/tmp/subl stdin iqwtqq.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -362,6 +370,32 @@
 				},
 				{
 					"buffer": 4,
+					"file": "/tmp/subl stdin XdgMEX.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "/Users/craig/Downloads/layout/6-share.html",
 					"settings":
 					{
@@ -388,7 +422,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "/tmp/subl stdin ds15e7.txt",
 					"settings":
 					{
@@ -414,11 +448,11 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "index.js",
 					"settings":
 					{
-						"buffer_size": 4740,
+						"buffer_size": 4743,
 						"regions":
 						{
 						},
@@ -441,19 +475,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "package.json",
 					"settings":
 					{
-						"buffer_size": 284,
+						"buffer_size": 288,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								257,
-								257
+								0,
+								0
 							]
 						],
 						"settings":
