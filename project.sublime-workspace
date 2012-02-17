@@ -19,7 +19,15 @@
 			"file": "vine/index.js",
 			"settings":
 			{
-				"buffer_size": 4743,
+				"buffer_size": 4987,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/tmp/subl stdin B3illd.txt",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -294,15 +302,15 @@
 					"file": "vine/index.js",
 					"settings":
 					{
-						"buffer_size": 4743,
+						"buffer_size": 4987,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4290,
-								4290
+								1094,
+								1094
 							]
 						],
 						"settings":
@@ -311,14 +319,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3855.0,
+						"translation.y": 735.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "/tmp/subl stdin XqA080.txt",
+					"file": "/tmp/subl stdin B3illd.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -344,7 +352,7 @@
 				},
 				{
 					"buffer": 3,
-					"file": "/tmp/subl stdin iqwtqq.txt",
+					"file": "/tmp/subl stdin XqA080.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -370,7 +378,7 @@
 				},
 				{
 					"buffer": 4,
-					"file": "/tmp/subl stdin XdgMEX.txt",
+					"file": "/tmp/subl stdin iqwtqq.txt",
 					"settings":
 					{
 						"buffer_size": 0,
@@ -396,6 +404,32 @@
 				},
 				{
 					"buffer": 5,
+					"file": "/tmp/subl stdin XdgMEX.txt",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
 					"file": "/Users/craig/Downloads/layout/6-share.html",
 					"settings":
 					{
@@ -422,7 +456,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "/tmp/subl stdin ds15e7.txt",
 					"settings":
 					{
@@ -448,7 +482,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "index.js",
 					"settings":
 					{
@@ -475,7 +509,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 9,
 					"file": "package.json",
 					"settings":
 					{
