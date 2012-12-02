@@ -1,5 +1,4 @@
-var outcome = require('outcome'),
-EventEmitter = require('events').EventEmitter;
+var outcome = require('outcome');
 
 
 //meh, shit's ugly.
@@ -18,22 +17,6 @@ function combineArrays(c1,c2,target,property)
 	
 	target[property] = c1p.concat(c2p);
 }
-
-function _buildMessage()
-{
-	var msg = arguments[0];
-
-	//error object
-	if(msg.message) msg = msg.message;
-	
-	for(var i = 1, n = arguments.length; i < n; i++)
-	{
-		msg = msg.replace(/%\w/, arguments[i]);
-	}
-	
-	return msg;
-}
-
 
 var Vine = 
 {
@@ -64,20 +47,17 @@ var Vine =
 			/**
 			 */
 
-			error: function()
-			{
-				if(!arguments.length) return data.errors;
-
-				if(arguments[0] instanceof Array) {
-					arguments[0].forEach(function(err) {
-						invoker.error(err);
-					})
-					return this;
-				}
-				
+			error: function(err)
+			{	
 				if(!data.errors) data.errors = [];
+
+				var error = {
+					message: err.message ? err.message : err
+				}
+
+				if(err.code) error.code = err.code;
 				
-				data.errors.push({ message: _buildMessage.apply(null, arguments)});
+				data.errors.push(error);
 				return this;
 			},
 
@@ -98,28 +78,36 @@ var Vine =
 			/**
 			 */
 			 
-			warning: function()
+			warn: function(message)
 			{
 				if(!arguments.length) return data.warnings;
 				
 				if(!data.warnings) data.warnings = [];
 				
-				data.warnings.push({ message: _buildMessage.apply(null, arguments)});
+				data.warnings.push({ message: message });
 				return this;
 			},
 			
 			/**
 			 */
 			
-			'success': function()
+			success: function(message)
 			{
 				if(!arguments.length) return data.messages;
 				
 				if(!data.messages) data.messages = [];
 				
-				data.messages.push({ message: _buildMessage.apply(null, arguments)});
+				data.messages.push({ message: message });
 				
 				return this;
+			},
+
+			/**
+			 */
+
+			message: function() 
+			{	
+				return invoker.success.apply(invoker, arguments);
 			},
 			
 			/**
@@ -144,23 +132,11 @@ var Vine =
 			/**
 			 */
 			 
-
 			redirect: function(to)
 			{
 				if(!arguments.length) return data.redirect;
 				
 				data.redirect = to;
-				return this;
-			},
-
-			/**
-			 */
-			 
-			message: function(msg)
-			{
-				if(!arguments.length) return data.message;
-				
-				data.message = _buildMessage.apply(null, arguments);
 				return this;
 			},
 
