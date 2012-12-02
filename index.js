@@ -56,6 +56,7 @@ var Vine =
 				}
 
 				if(err.code) error.code = err.code;
+				if(err.statusCode) error.code = err.statusCode;
 				
 				data.errors.push(error);
 				return this;
