@@ -1,5 +1,6 @@
 var outcome = require('outcome');
 
+var http = require("http");
 
 //meh, shit's ugly.
 function combineArrays(c1,c2,target,property)
@@ -51,12 +52,21 @@ var Vine =
 			{	
 				if(!data.errors) data.errors = [];
 
+
+				if(err.errors) {
+					for(var i = err.errors.length; i--;) {
+						invoker.error(err.errors[i]);
+					}
+					return this;
+				}
+
 				var error = {
 					message: err.message ? err.message : err
 				}
 
 				if(err.code) error.code = err.code;
 				if(err.statusCode) error.code = err.statusCode;
+				if(err.tags) error.tags = err.tags;
 				
 				data.errors.push(error);
 				return this;
