@@ -1,7 +1,5 @@
 var outcome = require('outcome');
 
-var http = require("http");
-
 //meh, shit's ugly.
 function combineArrays(c1,c2,target,property)
 {
